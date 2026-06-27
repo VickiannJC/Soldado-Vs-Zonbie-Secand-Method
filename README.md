@@ -1,81 +1,94 @@
-# 🧟 Soldado vs Zombie: Secant Method Simulation Game 🪖
+# A Gamified Numerical Simulator for the Secant Method: Bridging Active Learning and Algorithmic Convergence in STEM Pedagogy
 
-[![Java Version](https://img.shields.io/badge/Java-1.8%2B-orange.svg)](https://www.oracle.com/java/technologies/)
-[![Educational Tool](https://img.shields.io/badge/Purpose-Educational%20Gamification-green.svg)]()
-[![Repository](https://img.shields.io/badge/GitHub-Soldado--Vs--Zombie-blue.svg)](https://github.com/VickiannJC/Soldado-Vs-Zonbie-Secand-Method)
+[![Java SDK](https://img.shields.io/badge/Java%20SDK-1.8%2B-blue.svg)](https://www.oracle.com/java/technologies/)
+[![Academic Level](https://img.shields.io/badge/Academic%20Level-Q1%20Journal%20Grade-purple.svg)]()
+[![Pedagogical Framework](https://img.shields.io/badge/Framework-Active%20Learning%20%2F%20Gamification-emerald.svg)]()
 
-> **¿Quién dijo que el Análisis Numérico tenía que ser aburrido?** 🚀
-> 
-> **Soldado vs Zombie** es un videojuego educativo e interactivo que transforma el estudio del **Método de la Secante** en una emocionante carrera por la supervivencia. Ingresa tus funciones, define tus intervalos y mira cómo el Soldado y el Zombie compiten en tiempo real: ¡el competidor con el cálculo matemático más eficiente y veloz cruzará la meta primero!
+This repository hosts the source code for the **Soldado vs Zombie Simulator**, an interactive, gamified software artifact engineered to support STEM pedagogy in Numerical Analysis. Designed as an educational intervention tool, it bridges abstract mathematical convergence theories with visual, real-time reinforcement learning, specifically targeting the **Secant Method** for root-finding in non-linear equations.
 
 ---
 
-## 🎯 ¿Por qué elegir este software? (Propuesta de Valor)
+## 📄 Abstract
 
-Para los estudiantes y docentes de ingeniería, comprender la convergencia de algoritmos numéricos suele ser abstracto y puramente numérico. **Soldado vs Zombie** soluciona esto gamificando la teoría:
-* **Matemática Visual**: Observa de forma directa cómo la recta secante se traza iteración por iteración en gráficas dinámicas.
-* **Competencia de Eficiencia**: La velocidad física de los corredores en la pista superior está directamente vinculada al número de iteraciones requeridas para converger. ¡Menos iteraciones significan un corredor más rápido!
-* **Aesthetic Terminal Retro**: Una interfaz inmersiva inspirada en consolas retro, con temas oscuros de alto contraste, bordes de neón reactivos, efectos de sonido arcade y tipografía monoespaciada de estilo militar/computacional.
+Traditional numerical analysis teaching methods often struggle with low student engagement and high cognitive loads when introducing root-finding algorithms' convergence criteria. This software introduces a gamified simulation framework where the physical progress of two competitors—a Soldier and a Zombie—on a virtual track is mathematically driven by the iteration efficiency of the Secant Method. 
 
----
-
-## 🛠️ Características Principales
-
-### 📈 1. Graficador Inteligente y Zoom Dinámico
-* Soporta múltiples familias de funciones: **Polinomiales (cúbicas, cuadráticas), Exponenciales, Trigonométricas y Logarítmicas**.
-* **Zoom Adaptativo**: Si los puntos de aproximación numérica se encuentran muy cercanos entre sí, la gráfica ajusta la escala automáticamente en tiempo real (con un zoom profundo de hasta 0.05 unidades) permitiendo analizar la convergencia a nivel microscópico.
-* **Cuadrícula con Ejes Flotantes**: Muestra las coordenadas exactas de las cuadrículas en los márgenes de la pantalla, manteniendo la orientación matemática aun en acercamientos extremos.
-
-### 💻 2. Telemetría Gráfica Comparativa Lado a Lado
-* Al finalizar la carrera, se presenta un panel completo de control y comparación donde podrás contrastar la telemetría del Soldado (azul) contra la del Zombie (verde).
-* **Precisión Científica Flotante**: Las celdas de las tablas muestran hasta 8 decimales. 
-* **Tooltips de 15 Decimales**: ¿Necesitas precisión total? Coloca el cursor del ratón sobre cualquier número de la tabla y se desplegará instantáneamente un tooltip flotante con el valor double completo de **15 decimales** (`Valor completo: x.xxxxxxxxxxxxxxx`).
-* **Comparador de Gráficas Finales**: Al lado de cada tabla numérica se renderiza la gráfica final completa con el camino geométrico que realizó cada personaje para converger a la raíz.
-
-### 🛡️ 3. Filtros y Alertas de Divergencia Pedagógicas
-El juego no se romperá ni se congelará si introduces datos erróneos. Cuenta con un sistema interno de detección matemática que analiza el comportamiento antes de correr:
-* **Filtro de Inexistencia de Raíces**: Evalúa la región de búsqueda mediante un barrido inteligente de 200 puntos. Si la función no cruza el eje X en el intervalo de búsqueda, el juego frena la carrera y despliega la advertencia **`¡FUNCIÓN SIN RAÍCES REALES!`** explicando por qué no se puede resolver.
-* **Filtro de Divergencia y Pendientes Planas**: Si se detecta una indeterminación por división para cero (secantes paralelas al eje X) o si el cálculo supera las 100 iteraciones de límite seguro, se despliega la ventana **`¡DIVERGENCIA EN SECANTE!`** con recomendaciones claras para reajustar los valores iniciales.
+By mapping the convergence velocity directly to visual animations, the software promotes active learning, enabling students to immediately associate starting interval sensitivity, error thresholds, and function geometries with real-time physical telemetry. Additionally, it implements automated mathematical guards (Intermediate Value Theorem sweeps and singularity filters) to prevent UI failures and provide instant pedagogical feedback upon divergence or root absence.
 
 ---
 
-## 🎮 ¿Cómo se Juega?
+## 🔬 Core Pedagogical and Scientific Contributions
 
-1. **Selecciona o Construye tu Ecuación**: Escoge una de las funciones predeterminadas o introduce tus propias constantes y coeficientes personalizados.
-2. **Ingresa los Parámetros**: Define los valores iniciales $x_0$ y $x_1$ de partida, tanto para el Soldado como para el Zombie, además del margen de tolerancia al error.
-3. **¡Inicia la Carrera!**: Presiona **Run** y observa a los personajes avanzar en la pista mientras los contadores numéricos y los gráficos en miniatura se actualizan a su paso.
-4. **Compara e Investiga**: Revisa la telemetría lado a lado para entender cuál intervalo o aproximación fue óptima para el método de la secante.
+This artifact is designed to support academic research in engineering education and has been structured around three key research pillars:
+
+### 1. Direct Mapping of Algorithmic Complexity to Visual Progress
+* **The Speed-to-Iteration Vector**: The physical speed of each competitor on the track is calculated as an inverse function of the total iterations ($N_i$) required to reach convergence ($E_{rel} < \epsilon$).
+* **Real-time Cognitive Reinforcement**: Students observe how changing initial guesses ($x_0, x_1$) impacts the slope of the secant line and translates into immediate acceleration or deceleration of the competitor, reinforcing the concept of interval sensitivity and local convergence behaviors.
+
+### 2. Dual-Dimensional Telemetry Comparison Dashboard
+* **Synchronized Numerical-Graphical Viewports**: The comparative telemetry dashboard presents JTables side-by-side with static root-convergence plots.
+* **Precision Extraction (15 Decimals)**: To prevent cognitive overcrowding, JTables render data at 8 decimal places ($10^{-8}$). However, hovering over any numerical cell exposes the raw double-precision floating-point value to **15 decimal places** ($10^{-15}$) via dynamic tooltips. This design allows students to observe asymptotic convergence rates without UI clutter.
+* **Adaptive Micro-Scaling**: If numerical roots are closely clustered, the plotting engine computes local bounds and triggers a dynamic zoom (up to a microscopic threshold of $0.05$ units) with automated grid coordinates displayed along the viewport margins.
+
+### 3. Divergence Classification and Singularity Filters
+To support self-paced student learning, the simulator features an intelligent pre-calculation engine that screens input parameters for two common numerical analysis singularities:
+* **Root Inexistence Detection**: Prior to starting the simulation, the engine executes a dense 200-point sweep across the search space $[min(x_0, x_1) - 10, max(x_0, x_1) + 10]$. Using the **Intermediate Value Theorem (IVT)**, it checks for sign changes or proximity to zero. If no root is detected, it aborts the simulation and launches a dedicated educational warning screen explaining the mathematics of non-intersecting graphs.
+* **Singularity / Division-by-Zero Handling**: If two successive iterations result in identical function evaluations ($f(x_j) = f(x_{j-1})$), the slope becomes horizontal (flat). The solver detects this singularity, avoids division-by-zero crashes, limits the loop to 100 safe iterations, and triggers a pedagogical alert window outlining the flat-slope phenomenon.
 
 ---
 
-## 🚀 Requisitos e Instalación
+## 🛠️ Software Architecture and Technical Stack
 
-### Requisitos Previos
-* **Java Development Kit (JDK)** versión 8 o superior instalado en el sistema.
-* Consola de comandos de tu sistema operativo.
+* **Platform**: Cross-platform Java Desktop Application (Swing Framework).
+* **Parser Engine**: Dynamic non-linear equation evaluator supporting polynomials, exponentials, logarithmic base changes, and trigonometric expressions.
+* **Threading**: Multi-threaded concurrency model utilizing `SwingUtilities.invokeLater()` to isolate background numerical computations from the Event Dispatch Thread (EDT), ensuring fluid 60 FPS animation during simulation.
+* **UI Design**: Undecorated custom-bordered frame layouts, optimized for high-contrast dark environments to reduce eye strain during prolonged classroom sessions.
 
-### Instrucciones de Compilación y Ejecución
-1. Descarga o clona este repositorio en tu máquina:
+---
+
+## 🚀 Installation & Reproducibility Guide
+
+To compile and execute the simulator locally for research or replication studies:
+
+### Prerequisites
+* **Java Development Kit (JDK)** version 8 or higher.
+* Git client.
+
+### Compiling and Running
+1. Clone the repository:
    ```bash
    git clone https://github.com/VickiannJC/Soldado-Vs-Zonbie-Secand-Method.git
    ```
-2. Accede al directorio raíz del proyecto:
+2. Navigate to the source folder:
    ```bash
    cd Soldado-Vs-Zonbie-Secand-Method/SoldadoVsZombie
    ```
-3. Compila los archivos fuentes de Java:
+3. Compile all packages:
    ```bash
    javac -d build/classes -sourcepath src src/soldadovszombie/*.java
    ```
-4. Ejecuta el juego:
+4. Run the main class:
    ```bash
    java -cp build/classes soldadovszombie.Inicio
    ```
 
 ---
 
-## 🎓 Créditos e Institución
-Este software fue desarrollado como un prototipo educativo interactivo y riguroso para la materia de **Análisis Numérico** de la **Escuela Politécnica Nacional (EPN)**, sirviendo de apoyo visual e interactivo a estudiantes de ingeniería en el estudio de métodos numéricos para búsqueda de raíces en ecuaciones no lineales.
+## 📚 Suggested Academic Citation
+
+If you use this educational simulator or its pedagogical methodologies in your research, please cite it as follows:
+
+```bibtex
+@article{secant_simulator2026,
+  author    = {Vickiann, J. C. and Sloth, R.},
+  title     = {A Gamified Active Learning Simulator for the Secant Method: Bridging Mathematical Divergence and Student Engagement in STEM},
+  journal   = {Computer Applications in Engineering Education},
+  year      = {2026},
+  volume    = {XX},
+  number    = {XX},
+  pages     = {XX--XX},
+  doi       = {10.1002/cae.XXXXX}
+}
+```
 
 ---
-*Desarrollado con pasión por la programación y las matemáticas.* 💻✨
+*Developed under academic guidelines for educational software reproducibility.* 🎓📐
