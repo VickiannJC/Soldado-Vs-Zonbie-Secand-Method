@@ -1,4 +1,4 @@
-# A Gamified Numerical Simulator for the Secant Method: Bridging Active Learning and Algorithmic Convergence in STEM Pedagogy
+# Prototype of a Gamified Numerical Simulator for the Secant Method: Bridging Active Learning and Algorithmic Convergence in STEM Pedagogy
 
 This repository hosts the source code for the **Soldado vs Zombie Simulator**, an interactive, gamified software artifact engineered to support STEM pedagogy in Numerical Analysis. Designed as an educational intervention tool, it bridges abstract mathematical convergence theories with visual, real-time reinforcement learning, specifically targeting the **Secant Method** for root-finding in non-linear equations.
 
