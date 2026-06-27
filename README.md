@@ -1,14 +1,10 @@
 # A Gamified Numerical Simulator for the Secant Method: Bridging Active Learning and Algorithmic Convergence in STEM Pedagogy
 
-[![Java SDK](https://img.shields.io/badge/Java%20SDK-1.8%2B-blue.svg)](https://www.oracle.com/java/technologies/)
-[![Academic Level](https://img.shields.io/badge/Academic%20Level-Q1%20Journal%20Grade-purple.svg)]()
-[![Pedagogical Framework](https://img.shields.io/badge/Framework-Active%20Learning%20%2F%20Gamification-emerald.svg)]()
-
 This repository hosts the source code for the **Soldado vs Zombie Simulator**, an interactive, gamified software artifact engineered to support STEM pedagogy in Numerical Analysis. Designed as an educational intervention tool, it bridges abstract mathematical convergence theories with visual, real-time reinforcement learning, specifically targeting the **Secant Method** for root-finding in non-linear equations.
 
 ---
 
-## 📄 Abstract
+## Abstract
 
 Traditional numerical analysis teaching methods often struggle with low student engagement and high cognitive loads when introducing root-finding algorithms' convergence criteria. This software introduces a gamified simulation framework where the physical progress of two competitors—a Soldier and a Zombie—on a virtual track is mathematically driven by the iteration efficiency of the Secant Method. 
 
@@ -16,7 +12,7 @@ By mapping the convergence velocity directly to visual animations, the software 
 
 ---
 
-## 🔬 Core Pedagogical and Scientific Contributions
+## Core Pedagogical and Scientific Contributions
 
 This artifact is designed to support academic research in engineering education and has been structured around three key research pillars:
 
@@ -36,7 +32,7 @@ To support self-paced student learning, the simulator features an intelligent pr
 
 ---
 
-## 🛠️ Software Architecture and Technical Stack
+## Software Architecture and Technical Stack
 
 * **Platform**: Cross-platform Java Desktop Application (Swing Framework).
 * **Parser Engine**: Dynamic non-linear equation evaluator supporting polynomials, exponentials, logarithmic base changes, and trigonometric expressions.
@@ -45,7 +41,7 @@ To support self-paced student learning, the simulator features an intelligent pr
 
 ---
 
-## 🚀 Installation & Reproducibility Guide
+##  Installation & Reproducibility Guide
 
 To compile and execute the simulator locally for research or replication studies:
 
@@ -70,25 +66,3 @@ To compile and execute the simulator locally for research or replication studies
    ```bash
    java -cp build/classes soldadovszombie.Inicio
    ```
-
----
-
-## 📚 Suggested Academic Citation
-
-If you use this educational simulator or its pedagogical methodologies in your research, please cite it as follows:
-
-```bibtex
-@article{secant_simulator2026,
-  author    = {Vickiann, J. C. and Sloth, R.},
-  title     = {A Gamified Active Learning Simulator for the Secant Method: Bridging Mathematical Divergence and Student Engagement in STEM},
-  journal   = {Computer Applications in Engineering Education},
-  year      = {2026},
-  volume    = {XX},
-  number    = {XX},
-  pages     = {XX--XX},
-  doi       = {10.1002/cae.XXXXX}
-}
-```
-
----
-*Developed under academic guidelines for educational software reproducibility.* 🎓📐
